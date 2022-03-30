@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tugas AleertDialog</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="hitung">hitung</string>
+    <string name="masukan_harga_barang">Masukan Harga Barang</string>
+    <string name="masukan_jumlah">Masukan Jumlah</string>
+    <string name="masukan_barang">Masukan Barang</string>
+    <string name="struk_pembayaran">STRUK PEMBAYARAN</string>
+    <string name="pergi_ke_alert_dialog_n_custom_biasa">pergi ke alert dialog\n custom biasa</string>
+    <string name="pergi_ke_alert_dialog_n_custom_fragment">pergi ke alert dialog\n custom fragment</string>
+    <string name="bayar">Bayar</string>
+    <string name="silahkan_bayar">Silahkan Bayar</string>
+</resources>
