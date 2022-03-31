@@ -2,6 +2,7 @@
 <LinearLayout
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@color/teal_200"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,35 +21,43 @@
 
     <EditText
         android:id="@+id/masukan_barang"
+        android:background="@drawable/custom"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:layout_height="40dp"
         android:hint="@string/masukan_barang"
-        tools:ignore="Autofill,TextFields" />
+        tools:ignore="Autofill,RtlSymmetry,TextFields" />
 
     <EditText
         android:id="@+id/masukan_jumlah"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:background="@drawable/custom"
+        android:paddingStart="15dp"
+        android:layout_height="40dp"
         android:hint="@string/masukan_jumlah"
-        tools:ignore="Autofill,TextFields" />
+        tools:ignore="Autofill,RtlSymmetry,TextFields" />
 
     <EditText
         android:id="@+id/masukan_harga"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:background="@drawable/custom"
+        android:paddingStart="15dp"
+        android:layout_height="40dp"
         android:hint="@string/masukan_harga_barang"
-        tools:ignore="Autofill,TextFields" />
+        tools:ignore="Autofill,RtlSymmetry,TextFields" />
 
     <Button
         android:id="@+id/prosesnya"
+        android:layout_margin="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hitung"/>
 
     <TextView
+        android:layout_margin="20dp"
         android:id="@+id/hasil_semua"
         android:text="@string/belum_ada_data"
         android:textColor="@color/black"
@@ -56,5 +65,6 @@
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

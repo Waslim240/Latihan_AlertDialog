@@ -19,14 +19,14 @@ class CustomLayoutDialogFragment : AppCompatActivity() {
         val total1 = bund?.getString("TL")
         val kembalian1 = bund?.getString("KM")
 
-        if (kembalian1 == null){
-            hasil1.text = "Belum ada data"
-        } else{
-            hasil2.text = "Nama Barang : $barang1\n" +
+        if (kembalian1 != null){
+            hasil1.text = "Nama Barang : $barang1\n" +
                     "Jumlah Beli : ${jumlah1.toString()}\n" +
                     "Harga Beli : ${harga1.toString()}\n" +
                     "Total Belanja : ${total1.toString()}\n" +
                     "Kembalian : $kembalian1"
+        } else{
+            hasil1.text = "Belum ada data"
         }
 
 

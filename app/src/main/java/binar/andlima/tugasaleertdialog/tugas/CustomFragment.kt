@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import binar.andlima.tugasaleertdialog.R
 import kotlinx.android.synthetic.main.fragment_custom.*
@@ -37,24 +38,23 @@ class CustomFragment : DialogFragment() {
 
             val kembalian = bayar.toInt() - total
 
-            val bundle = Bundle()
-            bundle.putString("BR", barang)
-            bundle.putString("JM", jumlah)
-            bundle.putString("HR", harga)
-            bundle.putString("TL", total.toString())
-            bundle.putString("KM", kembalian.toString())
+            if (bayar < total.toString() ){
+                Toast.makeText(requireContext(), "Uang tidak cukup", Toast.LENGTH_LONG).show()
+            } else{
+                val bundle = Bundle()
+                bundle.putString("BR", barang)
+                bundle.putString("JM", jumlah)
+                bundle.putString("HR", harga)
+                bundle.putString("TL", total.toString())
+                bundle.putString("KM", kembalian.toString())
 
-            val pindah = Intent(requireContext(), CustomLayoutDialogFragment::class.java)
-            pindah.putExtras(bundle)
-            startActivity(pindah)
+                val pindah = Intent(requireContext(), CustomLayoutDialogFragment::class.java)
+                pindah.putExtras(bundle)
+                startActivity(pindah)
 
-            dismiss()
+                dismiss()
+            }
         }
 
-
-
-
     }
-
-
 }
